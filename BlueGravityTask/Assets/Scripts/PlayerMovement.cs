@@ -30,4 +30,11 @@ public class PlayerMovement : MonoBehaviour
         movement.Normalize();
         rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
+
+    public bool isMoving()
+    {
+        if(movement.sqrMagnitude > 0)
+            return true;
+        return false;
+    }
 }
