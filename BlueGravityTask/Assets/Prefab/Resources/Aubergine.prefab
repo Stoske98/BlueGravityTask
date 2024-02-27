@@ -204,7 +204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4292049336991601933}
-  - component: {fileID: 4695891855835769287}
+  - component: {fileID: 4293879613736364784}
   m_Layer: 0
   m_Name: Aubergine
   m_TagString: Untagged
@@ -230,7 +230,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4695891855835769287
+--- !u!114 &4293879613736364784
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -239,19 +239,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 6618605578105180297}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88a5ebc4f1cfec49b81e7c0255a6348, type: 3}
+  m_Script: {fileID: 11500000, guid: 71a87685ccdc77442b47f5c64cfe7935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_so: {fileID: 11400000, guid: a3f895289176515429e27faac917362d, type: 2}
+  amount: 2
+  interact_distance: 1.5
   pickup_time: 2
-  time_to_recovery: 30
+  time_to_recovery: 10
   main_object: {fileID: 3607857334432613746}
   replace_obj: {fileID: 550785581554046108}
-  pick_up_distance: 1
   cloud: {fileID: 1406892246158158632}
-  item:
-    name: Aubergine
-    price: 10
-    icon: {fileID: 21300000, guid: 3757151fd001a864bb1f65f8f52f10e6, type: 3}
 --- !u!1001 &5513182306442381467
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -29,11 +29,9 @@ public class Player : MonoBehaviour
     public Inventory inventory;
     public PlayerMovement movement;
     public Image work_timer;
-    private Resources current_resources;
-    [HideInInspector] public bool work = false;
+    private bool work;
     private void Start()
     {
-        inventory = new Inventory();
     }
     void Update()
     {
@@ -45,27 +43,24 @@ public class Player : MonoBehaviour
 
             if (hit.collider != null)
             {
-                    GameObject objectHit = hit.collider.gameObject;
-                    Resources resources = objectHit.GetComponentInParent<Resources>();
-                    if (resources != null && current_resources == null && (objectHit.transform.position - transform.position).magnitude < resources.pick_up_distance) 
-                    {
-
-                        work = true;
-                        current_resources = resources;
-                        current_resources.resource_interaction.StartPickup();
-                        work_timer.gameObject.SetActive(true);
-                    }
+                GameObject objectHit = hit.collider.gameObject;
+                IInteractable interactable = objectHit.GetComponentInParent(typeof(IInteractable)) as IInteractable;
+                if (interactable != null && !work)
+                    interactable.Interact(this);
             }
         }
-        if(work && current_resources != null)
-        {
-            work_timer.fillAmount = 1 - (Time.time - current_resources.resource_interaction.start_time) / current_resources.pickup_time;
-        }
-        if(current_resources != null && movement.isMoving() && work)
-        {
-            work = false;
-            current_resources.resource_interaction.StopPickup();
-            current_resources = null;
-        }
     }
+
+    public void SetPlayerWork(bool _work)
+    {
+        work = _work;
+    }
+
 }
+
+public interface IInteractable
+{
+    void Interact(Player player);
+
+}
+

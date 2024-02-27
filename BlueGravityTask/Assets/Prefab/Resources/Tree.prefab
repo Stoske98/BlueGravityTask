@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7081357116162346778}
   - component: {fileID: 2230113668536031897}
-  - component: {fileID: 8498508447176559104}
+  - component: {fileID: 8774699662982731884}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -62,7 +62,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.67323554, y: 0.6323899}
   m_EdgeRadius: 0
---- !u!114 &8498508447176559104
+--- !u!114 &8774699662982731884
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -71,19 +71,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 881653935399628949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c88a5ebc4f1cfec49b81e7c0255a6348, type: 3}
+  m_Script: {fileID: 11500000, guid: 71a87685ccdc77442b47f5c64cfe7935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_so: {fileID: 11400000, guid: ab7233e32a261884986b16adcae29d86, type: 2}
+  amount: 5
+  interact_distance: 2
   pickup_time: 5
-  time_to_recovery: 25
+  time_to_recovery: 20
   main_object: {fileID: 5036672963670620101}
   replace_obj: {fileID: 6834314691813691949}
-  pick_up_distance: 2
   cloud: {fileID: 1677413493065063869}
-  item:
-    name: Wood
-    price: 15
-    icon: {fileID: 21300000, guid: 929128fd9de17da4295bed95f29de58e, type: 3}
 --- !u!1 &5036672963670620101
 GameObject:
   m_ObjectHideFlags: 0
