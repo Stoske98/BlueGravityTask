@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47894b7db5de8944b8ddffe5e278ac85, type: 3}
-  m_Name: Wood
+  m_Script: {fileID: 11500000, guid: 1a1f1099d3c18034287b168e0a8c884f, type: 3}
+  m_Name: Knight
   m_EditorClassIdentifier: 
-  Name: Wood
-  Price: 20
-  Icon: {fileID: 21300000, guid: 929128fd9de17da4295bed95f29de58e, type: 3}
+  Name: Knight
+  Price: 250
+  Icon: {fileID: -1872342293, guid: 5f04aaca3f9738249a526d313a606345, type: 3}
+  anim_controller: {fileID: 9100000, guid: 388fd4f3106cd6543a03e3847abdfab6, type: 2}

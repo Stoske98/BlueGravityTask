@@ -77,6 +77,8 @@ MonoBehaviour:
   item_so: {fileID: 11400000, guid: ab7233e32a261884986b16adcae29d86, type: 2}
   amount: 5
   interact_distance: 2
+  valid_cursor: {fileID: 2800000, guid: 5e453a9ff67620149996c442b63c2516, type: 3}
+  unvalid_cursor: {fileID: 2800000, guid: d6edccf7356c2d442b7cd8e8c5d9de8d, type: 3}
   pickup_time: 5
   time_to_recovery: 20
   main_object: {fileID: 5036672963670620101}

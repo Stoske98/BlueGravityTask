@@ -159,4 +159,6 @@ MonoBehaviour:
   item_so: {fileID: 11400000, guid: d4476429e15aa184c9b3b80af29cf376, type: 2}
   amount: 5
   interact_distance: 2
+  valid_cursor: {fileID: 2800000, guid: e67174940ed2bfe4ea37c25b7aba7902, type: 3}
+  unvalid_cursor: {fileID: 2800000, guid: f28b667b59d45fc4998f188613e8c110, type: 3}
   pickup_time: 5

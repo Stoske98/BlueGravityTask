@@ -245,6 +245,8 @@ MonoBehaviour:
   item_so: {fileID: 11400000, guid: 313d5aa694d79c348a0f34812360b971, type: 2}
   amount: 2
   interact_distance: 1.5
+  valid_cursor: {fileID: 2800000, guid: 94ff2bbefbb2bfc43b46203ab1bb7bdd, type: 3}
+  unvalid_cursor: {fileID: 2800000, guid: 5856805dd1cc29042bd8edaa3c6ccb49, type: 3}
   pickup_time: 2
   time_to_recovery: 10
   main_object: {fileID: 817501356490178296}
